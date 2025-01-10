@@ -1,0 +1,8 @@
+This organisation features resources around **FSM**, the Fourier Scan Matching method. FSM may match two range scans from a 2D LIDAR sensor whose field of view is 360 degrees in real time. FSM is robust to sensor noise, void correspondences, high-frequency components and distance between measurements. These are due to the dispensing with correspondences, which the use of the Discrete Fourier Transform affords FSM.
+
+- [fsm](https://github.com/fourier-scan-matcher/fsm) contains the core `C++` source code
+- [IROS-2022-paper](https://github.com/fourier-scan-matcher/IROS-2022-paper) contains the source `tex` code of the paper titled "FSM: Correspondenceless scan-matching of panoramic 2D range scans", presented at the 2022 IEEE/RSJ International Conference on Intelligent Robots and Systems, held at Kyoto, Japan
+- [IROS-2022-presentations-resources](https://github.com/fourier-scan-matcher/IROS-2022-presentations-resources) contains material related to the presentation of FSM, namely the presentation required by IROS 2022
+- [fsm-lo](https://github.com/fourier-scan-matcher/fsm-lo) contains the `roscpp` source code of a ROS package which uses FSM to produce LIDAR odometry, and `docker`-related files for building and deploying it
+- [scan-matching-tests](https://github.com/fourier-scan-matcher/scan-matching-tests) contains the `C++` source code that was used to produce the results supporting the contributions of the paper featured at [sm-experiments-logs](https://github.com/fourier-scan-matcher/sm-experiments-logs)
+- [sm-experiments-logs](https://github.com/fourier-scan-matcher/sm-experiments-logs) contains raw output data used to illustrate and support FSM's contributions in sections V "Results" and VI "Characterisation" of the paper
